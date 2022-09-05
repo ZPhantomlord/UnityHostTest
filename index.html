@@ -69,8 +69,6 @@
 			} catch (e) {
 				scaleToFit = true;
 			}
-			var text = document.getElementById("#progressText");
-			text = "percent";
 			function progressHandler(progress) {
 				var percent = progress * 100 + '%';
 				canvas.style.background = 'linear-gradient(to right, white, white ' + percent + ', transparent ' + percent + ', transparent) no-repeat center';
