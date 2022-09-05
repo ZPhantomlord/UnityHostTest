@@ -49,6 +49,7 @@
 <body>
 
 	<div id="gameContainer">
+		<div id="progressText">10%</div>
 		<canvas id="unity-canvas" data-pixel-art="false"></canvas>
 		<script src="Build/UnityHostTest.loader.js"></script>
 		<script>
@@ -72,7 +73,7 @@
 			function progressHandler(progress) {
 				var percent = progress * 100 + '%';
 				var text = document.getElementById("#progressText");
-				text = "percent";
+				text = percent;
 				canvas.style.background = 'linear-gradient(to right, white, white ' + percent + ', transparent ' + percent + ', transparent) no-repeat center';
 				canvas.style.backgroundSize = '100% 1rem';
 			}
@@ -108,9 +109,7 @@
 			window.addEventListener('resize', onResize);
 			onResize();
 		</script>
-		<div id="progressText">0%</div>
 	</div>
-
 </body>
 
 </html>
