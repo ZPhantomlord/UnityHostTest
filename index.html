@@ -53,8 +53,8 @@
 		<canvas id="unity-canvas" data-pixel-art="false"></canvas>
 		<script src="Build/UnityHostTest.loader.js"></script>
 		<script>
-			const text = document.getElementById("#progressText");
-			text.textContent = "percent";
+			var text = document.getElementById("#progressText");
+			text = "percent";
 			var canvas = document.querySelector("#unity-canvas");
 			var config = {
 				dataUrl: "Build/UnityHostTest.data.unityweb",
