@@ -37,24 +37,14 @@
 			image-rendering: pixelated;
 			-ms-interpolation-mode: nearest-neighbor;
 		}
-
-		div#progressText {
-			color: aliceblue;
-			position: relative;
-			font-size: 50px;
-		}
 	</style>
 </head>
 
 <body>
-
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art="false"></canvas>
-
 		<script src="Build/UnityHostTest.loader.js"></script>
 		<script>
-			var text = document.getElementById("#progressText");
-			text = "percent";
 			var canvas = document.querySelector("#unity-canvas");
 			var config = {
 				dataUrl: "Build/UnityHostTest.data.unityweb",
@@ -109,7 +99,6 @@
 			onResize();
 		</script>
 	</div>
-	<div id="progressText">0%</div>
 </body>
 
 </html>
