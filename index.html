@@ -40,14 +40,19 @@
 		#barText {
 			color: aliceblue;
 			font-size: 40px;
-			text-align: center;
-			margin-top: 50%;
+			position: absolute;
+			top:0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
 		}
 	</style>
 </head>
 
 <body>
 	<div id="gameContainer">
+		<div id="barText"></div>
 		<canvas id="unity-canvas" data-pixel-art="false"></canvas>
 		<script src="Build/UnityHostTest.loader.js"></script>
 		<script>
@@ -115,7 +120,6 @@
 			onResize();
 		</script>
 	</div>
-	<div id="barText"></div>
 </body>
 
 </html>
