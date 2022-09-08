@@ -69,7 +69,7 @@
 			}
 			function progressHandler(progress) {
 				var percent = progress * 100 + '%';
-				textElement = percent;
+				textElement.innerHTML = percent;
 				canvas.style.background = 'linear-gradient(to right, white, white ' + percent + ', transparent ' + percent + ', transparent) no-repeat center';
 				canvas.style.backgroundSize = '100% 1rem';
 			}
